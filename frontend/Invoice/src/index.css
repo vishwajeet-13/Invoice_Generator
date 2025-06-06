@@ -1,0 +1,35 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap');
+@import "tailwindcss";
+body {
+  font-family: 
+ 'Inter', sans-serif;
+/* InterVariable (woff2)
+Inter (woff2)
+-apple-system
+BlinkMacSystemFont
+"Segoe UI"
+Roboto
+Oxygen
+Ubuntu
+Cantarell
+"Fira Sans"
+"Droid Sans"
+"Helvetica Neue"
+sans-serif */
+}
+
+/* Reduce toast height and adjust padding */
+.toastify-custom .Toastify__toast {
+  min-height: 40px;        
+  padding: 8px 12px;      
+  font-size: 0.85rem;  
+  border-radius: 8px;
+
+}
+
+input[type='number']::-webkit-inner-spin-button,
+input[type='number']::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
