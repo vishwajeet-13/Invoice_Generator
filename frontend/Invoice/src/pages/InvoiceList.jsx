@@ -20,10 +20,13 @@ const InvoiceList = () => {
 
     return () => clearTimeout(timeoutId);
   }
-
+  console.log("User:", user);
+  console.log(invoices.length)
   const fetchInvoices = async () => {
     try {
       const res = await axiosInstance.get(`/user/invoice/list/${user.id}`);
+      console.log(typeof(res.data))
+      console.log(res.data)
       setInvoices(res.data || []);
     } catch (err) {
       console.error("Failed to fetch invoices:", err);
